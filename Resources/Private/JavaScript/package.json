@@ -9,8 +9,8 @@
   "devDependencies": {
       "@neos-project/neos-ui-extensibility": "^2.1",
       "moment-timezone": "^0.5.33",
-      "react-datetime": "^3.0.4",
-      "react-collapse": "^5.1.0",
-      "classnames": "^2.3.1"
+      "react-collapse": "^5.0.1",
+      "react-datetime": "^2.8.10",
+      "classnames": "^2.2.3"
   }
 }

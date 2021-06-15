@@ -53,7 +53,7 @@ class DateTimeEditor extends Component {
         if (!this.hasTimezoneSupport()) {
             return 'UTC';
         }
-        return this.state.selectedTimezone || (this.preferredDisplayTimezone || moment.tz.guess());
+        return this.state.selectedTimezone || (this.preferredDisplayTimezone() || moment.tz.guess());
     }
 
     onTimezoneChange = selectedTimezone => {
@@ -86,7 +86,6 @@ class DateTimeEditor extends Component {
         }, $get('timeConstraints', options));
 
         return (
-            <div>
             <ExtendedDateInput
                 id={id}
                 className={className}
@@ -105,7 +104,6 @@ class DateTimeEditor extends Component {
                 displayTimezone={this.decideDisplayTimezone()}
                 onDisplayTimezoneChange={this.onTimezoneChange}
             />
-            </div>
         );
     }
 }

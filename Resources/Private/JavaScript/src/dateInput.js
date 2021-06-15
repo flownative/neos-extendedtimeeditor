@@ -12,7 +12,7 @@ import {Button, SelectBox, Icon, DateInput, SelectBox_Option_SingleLine} from '@
 
 import style from './style.css';
 
-export default class ExtendedDateInput extends DateInput {
+export default class ExtendedDateInput extends Component {
     state = {isOpen: false, transientDate: null, selectedTimezone: null}
 
     static defaultProps = {
