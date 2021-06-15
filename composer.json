@@ -1,0 +1,18 @@
+{
+    "name": "flownative/neos-extendedtimeeditor",
+    "type": "neos-package",
+    "description": "Extended UI editor to enable timezone visibility",
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "require": {
+        "neos/neos-ui-compiled": "*"
+    },
+    "autoload": {
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Flownative.Neos.ExtendedTimeEditor"
+        }
+    }
+}

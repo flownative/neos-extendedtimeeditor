@@ -1,0 +1,17 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          'Flownative.Neos.ExtendedTimeEditor/DateTimeEditor':
+            resource: 'resource://Flownative.Neos.ExtendedTimeEditor/Public/Plugin.js'
+
+        stylesheets:
+          'Flownative.Neos.ExtendedTimeEditor/DateTimeEditor':
+            resource: 'resource://Flownative.Neos.ExtendedTimeEditor/Public/Plugin.css'
+
+    userInterface:
+      inspector:
+        dataTypes:
+          DateTime:
+            editor: 'Flownative.Neos.ExtendedTimeEditor/DateTimeEditor'

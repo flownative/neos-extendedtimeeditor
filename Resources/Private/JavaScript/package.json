@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "neos-react-scripts build",
+    "watch": "neos-react-scripts watch"
+  },
+  "neos": {
+    "buildTargetDirectory": "../../Public"
+  },
+  "devDependencies": {
+      "@neos-project/neos-ui-extensibility": "^2.1",
+      "moment-timezone": "^0.5.33",
+      "react-datetime": "^3.0.4",
+      "react-collapse": "^5.1.0",
+      "classnames": "^2.3.1"
+  }
+}

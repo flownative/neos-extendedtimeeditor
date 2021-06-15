@@ -1,0 +1,561 @@
+.reset__reset___3Y_S- {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+    .reset__reset___3Y_S-, .reset__reset___3Y_S-:before, .reset__reset___3Y_S-:after {
+        box-sizing: border-box;
+    }
+
+    /* some browsers set a font-size or margin in their user stylesheets */
+
+    .reset__reset___3Y_S- input {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3Y_S- textarea {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3Y_S- select {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3Y_S- button {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .reset__reset___3Y_S- ul {
+        padding: 0;
+    }
+
+    /* webkit adds some weird spacing otherwise */
+
+    .reset__reset___3Y_S- li {
+        display: block;
+    }
+
+    .reset__reset___3Y_S- input::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    /* webkit adds white box around search box */
+
+    .reset__reset___3Y_S- input {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+
+.style__calendarInputWrapper___3Ccpl {
+    display: table;
+    width: 100%;
+}
+
+.style__calendarInputWrapper--highlight___1IsBv {
+    outline: 2px solid #00a338;
+}
+
+.style__calendarInputWrapper--invalid___2YKMQ {
+    outline: 2px solid #ff460d !important;
+    color: #ff460d !important;
+}
+
+.style__closeCalendarIconBtn___2NUua {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    height: 40px;
+    min-width: 41px;
+    border: none;
+    background: #323232;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.style__calendarIconBtn___1INMC {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    height: 40px;
+    min-width: 41px;
+    border: none;
+    background: #323232;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.style__calendarIconBtn___1INMC {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.style__closeCalendarIconBtn___2NUua {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.style__closeCalendarIconBtn___2NUua:hover {
+    background: #00ADEE;
+}
+
+.style__calendarIconBtn___1INMC:hover {
+    background: #00ADEE;
+}
+
+.style__closeCalendarIconBtn___2NUua {
+    border-left: 1px solid #222;
+}
+
+.style__calendarIconBtn___1INMC {
+    border-right: 1px solid #222;
+}
+
+.style__calendarFakeInputWrapper___vb1K8 {
+    display: table-cell;
+    position: relative;
+    width: 100%;
+}
+
+.style__calendarFakeInputMirror___3Y-o1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.style__calendarFakeInput___29QiV {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #323232;
+    background: #323232;
+    font-size: 14px;
+    padding: 0 14px;
+    margin: 0;
+    box-shadow: none;
+    transition: none;
+
+}
+
+.style__calendarFakeInput___29QiV
+:focus {
+    outline: 0;
+}
+
+.style__selectTodayBtn___3hdS2 {
+    width: calc(100% - 2px);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #323232;
+    border-top: 0;
+    font-size: 14px;
+    cursor: pointer;
+    background: #141414;
+    color: #FFF;
+
+}
+
+.style__selectTodayBtn___3hdS2
+:hover {
+    background: #00ADEE !important;
+}
+
+.style__applyBtn___19okH {
+    width: calc(100% - 2px);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #323232;
+    border-top: 0;
+    font-size: 14px;
+}
+
+.style__wrapper___cQFyX {
+}
+
+.style__wrapper___cQFyX input[type='text'] {
+    display: none;
+}
+
+/**
+ * Styles from the react-datetime package.
+ * Since we cannot import other packages css in css modules and
+ * putting them in a "global" scope at the same time, we had to
+ * copy the css directly.
+ *
+ * @todo: revisit if we can solve this in a better way.
+ */
+
+/*!
+* https://github.com/arqex/react-datetime
+*/
+
+.style__wrapper___cQFyX .rdt {
+    position: relative;
+}
+
+.style__wrapper___cQFyX .rdtPicker {
+    display: none;
+    /*position: absolute;*/
+    width: 250px;
+    padding: 4px;
+    margin-top: 1px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 1px solid #323232;
+}
+
+.style__wrapper___cQFyX .rdtOpen .rdtPicker {
+    display: block;
+}
+
+.style__wrapper___cQFyX .rdtStatic .rdtPicker {
+    box-shadow: none;
+    position: static;
+}
+
+.style__wrapper___cQFyX .rdtPicker .rdtTimeToggle {
+    text-align: center;
+}
+
+.style__wrapper___cQFyX .rdtPicker table {
+    width: 100%;
+    margin: 0;
+}
+
+.style__wrapper___cQFyX .rdtPicker td,
+.style__wrapper___cQFyX .rdtPicker th {
+    text-align: center;
+    height: 28px;
+}
+
+.style__wrapper___cQFyX .rdtPicker td {
+    cursor: pointer;
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtToday:hover,
+.style__wrapper___cQFyX .rdtPicker td.rdtHour:hover,
+.style__wrapper___cQFyX .rdtPicker td.rdtMinute:hover,
+.style__wrapper___cQFyX .rdtPicker td.rdtSecond:hover,
+.style__wrapper___cQFyX .rdtPicker .rdtTimeToggle:hover {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtOld,
+.style__wrapper___cQFyX .rdtPicker td.rdtNew {
+    color: #999999;
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtToday {
+    position: relative;
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtToday:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid #428bca;
+    border-top-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtActive,
+.style__wrapper___cQFyX .rdtPicker td.rdtActive:hover {
+    background-color: #428bca;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtActive.rdtToday:before {
+    border-bottom-color: #fff;
+}
+
+.style__wrapper___cQFyX .rdtPicker td.rdtDisabled,
+.style__wrapper___cQFyX .rdtPicker td.rdtDisabled:hover {
+    background: none;
+    color: #999999;
+    cursor: not-allowed;
+}
+
+.style__wrapper___cQFyX .rdtPicker td span.rdtOld {
+    color: #999999;
+}
+
+.style__wrapper___cQFyX .rdtPicker td span.rdtDisabled,
+.style__wrapper___cQFyX .rdtPicker td span.rdtDisabled:hover {
+    background: none;
+    color: #999999;
+    cursor: not-allowed;
+}
+
+.style__wrapper___cQFyX .rdtPicker th {
+    border-bottom: 1px solid #323232;
+}
+
+.style__wrapper___cQFyX .rdtPicker .dow {
+    width: 14.2857%;
+    border-bottom: none;
+}
+
+.style__wrapper___cQFyX .rdtPicker th.rdtSwitch {
+    width: 100px;
+}
+
+.style__wrapper___cQFyX .rdtPicker th.rdtNext,
+.style__wrapper___cQFyX .rdtPicker th.rdtPrev {
+    font-size: 21px;
+    vertical-align: top;
+}
+
+.style__wrapper___cQFyX .rdtPrev span,
+.style__wrapper___cQFyX .rdtNext span {
+    display: block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.style__wrapper___cQFyX .rdtPicker th.rdtDisabled,
+.style__wrapper___cQFyX .rdtPicker th.rdtDisabled:hover {
+    background: none;
+    color: #999999;
+    cursor: not-allowed;
+}
+
+.style__wrapper___cQFyX .rdtPicker thead tr:first-child th {
+    cursor: pointer;
+}
+
+.style__wrapper___cQFyX .rdtPicker thead tr:first-child th:hover {
+    background: #eeeeee;
+}
+
+.style__wrapper___cQFyX .rdtPicker tfoot {
+    border-top: 1px solid #323232;
+}
+
+.style__wrapper___cQFyX .rdtPicker button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.style__wrapper___cQFyX .rdtPicker button:hover {
+    background-color: #eee;
+}
+
+.style__wrapper___cQFyX .rdtPicker thead button {
+    width: 100%;
+    height: 100%;
+}
+
+.style__wrapper___cQFyX td.rdtMonth,
+.style__wrapper___cQFyX td.rdtYear {
+    height: 50px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.style__wrapper___cQFyX td.rdtMonth:hover,
+.style__wrapper___cQFyX td.rdtYear:hover {
+    background: #eee;
+}
+
+.style__wrapper___cQFyX .rdtCounters {
+    display: inline-block;
+}
+
+.style__wrapper___cQFyX .rdtCounters > div {
+    float: left;
+}
+
+.style__wrapper___cQFyX .rdtCounter {
+    height: 100px;
+}
+
+.style__wrapper___cQFyX .rdtCounter {
+    width: 40px;
+}
+
+.style__wrapper___cQFyX .rdtCounterSeparator {
+    line-height: 100px;
+}
+
+.style__wrapper___cQFyX .rdtCounter .rdtBtn {
+    height: 40%;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.style__wrapper___cQFyX .rdtCounter .rdtBtn:hover {
+    color: #00ADEE;
+}
+
+.style__wrapper___cQFyX .rdtCounter .rdtCount {
+    height: 20%;
+    font-size: 1.2em;
+}
+
+.style__wrapper___cQFyX .rdtMilli {
+    vertical-align: middle;
+    padding-left: 8px;
+    width: 48px;
+}
+
+.style__wrapper___cQFyX .rdtMilli input {
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 37px;
+}
+
+.style__wrapper___cQFyX .rdtDayPart {
+    margin-top: 43px;
+}
+
+/**
+ * Overwrites for the calendar
+ */
+
+.style__wrapper___cQFyX .rdtPicker {
+    position: relative;
+    width: calc(100% - 4px);
+    background: #141414;
+    padding: 0;
+    border: 1px solid #323232;
+    border-top: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+.style__wrapper___cQFyX .rdtPicker table {
+    border-collapse: collapse;
+}
+
+.style__wrapper___cQFyX .rdtPicker th {
+    width: 37px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    font-size: 14px;
+    border: 0;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+
+}
+
+.style__wrapper___cQFyX .rdtPicker th
+.rdtPrev:hover {
+    background: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX .rdtPicker th
+.rdtNext:hover {
+    background: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX .rdtPicker th
+.rdtSwitch:hover {
+    background: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX .rdtPicker th
+.dow {
+    width: 40px;
+    background: #323232;
+    text-align: center;
+}
+
+.style__wrapper___cQFyX td.rdtDay {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #323232;
+}
+
+.style__wrapper___cQFyX td.rdtMonth {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #323232;
+}
+
+.style__wrapper___cQFyX td.rdtTimeToggle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #323232;
+}
+
+.style__wrapper___cQFyX td.rdtDay:hover {
+    background: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX td.rdtMonth:hover {
+    background: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX td.rdtTimeToggle:hover {
+    background: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX td.rdtDay.rdtOld,
+.style__wrapper___cQFyX td.rdtDay.rdtNew {
+    color: #5b5b5b;
+}
+
+.style__wrapper___cQFyX td.rdtToday:before {
+    border-bottom-color: #00ADEE !important;
+}
+
+.style__wrapper___cQFyX td.rdtActive {
+    background: #00ADEE !important;
+    color: #FFF;
+
+}
+
+.style__wrapper___cQFyX td.rdtActive
+:before {
+    display: none !important;
+}
+
+.style__disabled___2uKn_ {
+    opacity: .5;
+}
+
+.style__disabled-cursor___1dEtq {
+    cursor: not-allowed;
+}
+
+
+/*# sourceMappingURL=Plugin.css.map*/
