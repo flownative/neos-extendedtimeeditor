@@ -27132,7 +27132,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _neosUiExtensibility2.default)('Flownative.Neos.ExtendedTimeEditor/DateTimeEditor', {}, function (globalRegistry) {
     var editorsRegistry = globalRegistry.get('inspector').get('editors');
 
-    console.log(_DateTimeEditor2.default);
     editorsRegistry.set('Flownative.Neos.ExtendedTimeEditor/DateTimeEditor', {
         component: _DateTimeEditor2.default
     });

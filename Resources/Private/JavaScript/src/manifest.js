@@ -5,7 +5,6 @@ import DateTimeEditor from './DateTimeEditor';
 manifest('Flownative.Neos.ExtendedTimeEditor/DateTimeEditor', {}, globalRegistry => {
     const editorsRegistry = globalRegistry.get('inspector').get('editors');
 
-    console.log(DateTimeEditor);
     editorsRegistry.set('Flownative.Neos.ExtendedTimeEditor/DateTimeEditor', {
         component: DateTimeEditor
     });
