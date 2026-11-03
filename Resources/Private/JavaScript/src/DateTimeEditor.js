@@ -5,15 +5,14 @@ import moment, {isMoment} from 'moment-timezone';
 import {neos} from '@neos-project/neos-ui-decorators';
 import convertPhpDateFormatToMoment, {hasDateFormat, hasTimeFormat} from './helpers';
 import {connect} from 'react-redux';
-import {$transform, $get} from 'plow-js';
 
 import {DateInput} from '@neos-project/react-ui-components';
 
 @neos(globalRegistry => ({
     i18nRegistry: globalRegistry.get('i18n')
 }))
-@connect(state => $transform({
-    interfaceLanguage: $get('user.preferences.interfaceLanguage')
+@connect(state => ({
+    interfaceLanguage: state.user && state.user.preferences && state.user.preferences.interfaceLanguage
 }))
 class DateTimeEditor extends Component {
     state = {selectedTimezone: null}
@@ -37,7 +36,7 @@ class DateTimeEditor extends Component {
         const {
             options
         } = this.props;
-        return !!$get('timezoneSupport', options);
+        return !!(options && options.timezoneSupport);
     }
 
     // TODO Support for user preference storage of preferred timezone
@@ -46,7 +45,7 @@ class DateTimeEditor extends Component {
         const {
             options
         } = this.props;
-        return $get('preferredTimezone', options) || null;
+        return (options && options.preferredTimezone) || null;
     }
 
     decideDisplayTimezone = () => {
@@ -81,9 +80,9 @@ class DateTimeEditor extends Component {
 
         const timeConstraints = Object.assign({
             minutes: {
-                step: $get('minuteStep', options) || 5
+                step: (options && options.minuteStep) || 5
             }
-        }, $get('timeConstraints', options));
+        }, (options && options.timeConstraints));
 
         return (
             <ExtendedDateInput
@@ -94,7 +93,7 @@ class DateTimeEditor extends Component {
                 labelFormat={convertPhpDateFormatToMoment(options.format)}
                 dateOnly={!hasTimeFormat(options.format)}
                 timeOnly={!hasDateFormat(options.format)}
-                placeholder={i18nRegistry.translate($get('placeholder', options) || 'Neos.Neos:Main:content.inspector.editors.dateTimeEditor.noDateSet')}
+                placeholder={i18nRegistry.translate((options && options.placeholder) || 'Neos.Neos:Main:content.inspector.editors.dateTimeEditor.noDateSet')}
                 todayLabel={i18nRegistry.translate('content.inspector.editors.dateTimeEditor.today', 'Today', {}, 'Neos.Neos', 'Main')}
                 applyLabel={i18nRegistry.translate('content.inspector.editors.dateTimeEditor.apply', 'Apply', {}, 'Neos.Neos', 'Main')}
                 locale={interfaceLanguage}
