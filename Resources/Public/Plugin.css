@@ -12,23 +12,11 @@
 
     /* some browsers set a font-size or margin in their user stylesheets */
 
-    .reset__reset___3Y_S- input {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .reset__reset___3Y_S- textarea {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .reset__reset___3Y_S- select {
-        font-size: 14px;
-        margin: 0;
-    }
-
+    .reset__reset___3Y_S- input,
+    .reset__reset___3Y_S- textarea,
+    .reset__reset___3Y_S- select,
     .reset__reset___3Y_S- button {
-        font-size: 14px;
+        font-size: var(--fontSize-Base);
         margin: 0;
     }
 
@@ -49,9 +37,7 @@
     /* webkit adds white box around search box */
 
     .reset__reset___3Y_S- input {
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
+        appearance: none;
     }
 
 .style__calendarInputWrapper___3Ccpl {
@@ -60,28 +46,15 @@
 }
 
 .style__calendarInputWrapper--highlight___1IsBv {
-    outline: 2px solid #00a338;
+    outline: 2px solid var(--colors-Success);
 }
 
 .style__calendarInputWrapper--invalid___2YKMQ {
-    outline: 2px solid #ff460d !important;
-    color: #ff460d !important;
+    outline: 2px solid var(--colors-Error) !important;
+    color: var(--colors-Error) !important;
 }
 
-.style__closeCalendarIconBtn___2NUua {
-    position: relative;
-    display: table-cell;
-    vertical-align: top;
-    padding: 10px;
-    height: 40px;
-    min-width: 41px;
-    border: none;
-    background: #323232;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-}
-
+.style__closeCalendarIconBtn___2NUua,
 .style__calendarIconBtn___1INMC {
     position: relative;
     display: table-cell;
@@ -90,7 +63,7 @@
     height: 40px;
     min-width: 41px;
     border: none;
-    background: #323232;
+    background: var(--colors-ContrastNeutral);
     text-align: center;
     font-size: 14px;
     cursor: pointer;
@@ -106,20 +79,17 @@
     border-bottom-right-radius: 2px;
 }
 
-.style__closeCalendarIconBtn___2NUua:hover {
-    background: #00ADEE;
-}
-
+.style__closeCalendarIconBtn___2NUua:hover,
 .style__calendarIconBtn___1INMC:hover {
-    background: #00ADEE;
+    background: var(--colors-PrimaryBlue);
 }
 
 .style__closeCalendarIconBtn___2NUua {
-    border-left: 1px solid #222;
+    border-left: 1px solid var(--colors-ContrastDarker);
 }
 
 .style__calendarIconBtn___1INMC {
-    border-right: 1px solid #222;
+    border-right: 1px solid var(--colors-ContrastDarker);
 }
 
 .style__calendarFakeInputWrapper___vb1K8 {
@@ -134,7 +104,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: var(--zIndex-CalendarFakeInputMirror-Context);
     cursor: pointer;
 }
 
@@ -143,8 +113,8 @@
     vertical-align: top;
     width: 100%;
     height: 40px;
-    border: 2px solid #323232;
-    background: #323232;
+    border: 2px solid var(--colors-ContrastNeutral);
+    background: var(--colors-ContrastNeutral);
     font-size: 14px;
     padding: 0 14px;
     margin: 0;
@@ -163,18 +133,18 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border: 1px solid #323232;
+    border: 1px solid var(--colors-ContrastNeutral);
     border-top: 0;
-    font-size: 14px;
+    font-size: var(--fontSize-Base);
     cursor: pointer;
-    background: #141414;
-    color: #FFF;
+    background: var(--colors-ContrastDarkest);
+    color: var(--colors-ContrastBrightest);
 
 }
 
 .style__selectTodayBtn___3hdS2
 :hover {
-    background: #00ADEE !important;
+    background: var(--colors-PrimaryBlue) !important;
 }
 
 .style__applyBtn___19okH {
@@ -182,9 +152,9 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border: 1px solid #323232;
+    border: 1px solid var(--colors-ContrastNeutral);
     border-top: 0;
-    font-size: 14px;
+    font-size: var(--fontSize-Base);
 }
 
 .style__wrapper___cQFyX {
@@ -217,10 +187,10 @@
     width: 250px;
     padding: 4px;
     margin-top: 1px;
-    z-index: 1;
+    z-index: var(--zIndex-RdtPicker-Context);
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-    border: 1px solid #323232;
+    border: 1px solid var(--colors-ContrastNeutral);
 }
 
 .style__wrapper___cQFyX .rdtOpen .rdtPicker {
@@ -310,7 +280,7 @@
 }
 
 .style__wrapper___cQFyX .rdtPicker th {
-    border-bottom: 1px solid #323232;
+    border-bottom: 1px solid var(--colors-ContrastNeutral);
 }
 
 .style__wrapper___cQFyX .rdtPicker .dow {
@@ -332,10 +302,7 @@
 .style__wrapper___cQFyX .rdtNext span {
     display: block;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
 }
 
 .style__wrapper___cQFyX .rdtPicker th.rdtDisabled,
@@ -354,7 +321,7 @@
 }
 
 .style__wrapper___cQFyX .rdtPicker tfoot {
-    border-top: 1px solid #323232;
+    border-top: 1px solid var(--colors-ContrastNeutral);
 }
 
 .style__wrapper___cQFyX .rdtPicker button {
@@ -411,14 +378,11 @@
     display: block;
 
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
 }
 
 .style__wrapper___cQFyX .rdtCounter .rdtBtn:hover {
-    color: #00ADEE;
+    color: var(--colors-PrimaryBlue);
 }
 
 .style__wrapper___cQFyX .rdtCounter .rdtCount {
@@ -449,9 +413,9 @@
 .style__wrapper___cQFyX .rdtPicker {
     position: relative;
     width: calc(100% - 4px);
-    background: #141414;
+    background: var(--colors-ContrastDarkest);
     padding: 0;
-    border: 1px solid #323232;
+    border: 1px solid var(--colors-ContrastNeutral);
     border-top: 0;
     margin: 0;
     box-shadow: none;
@@ -466,67 +430,45 @@
     height: 40px;
     line-height: 40px;
     font-weight: normal;
-    font-size: 14px;
+    font-size: var(--fontSize-Base);
     border: 0;
-    border-left: 1px solid #323232;
-    border-right: 1px solid #323232;
-    border-bottom: 1px solid #323232;
+    border-left: 1px solid var(--colors-ContrastNeutral);
+    border-right: 1px solid var(--colors-ContrastNeutral);
+    border-bottom: 1px solid var(--colors-ContrastNeutral);
 
 }
 
 .style__wrapper___cQFyX .rdtPicker th
-.rdtPrev:hover {
-    background: #00ADEE !important;
-}
+.rdtPrev:hover,
 
 .style__wrapper___cQFyX .rdtPicker th
-.rdtNext:hover {
-    background: #00ADEE !important;
-}
+.rdtNext:hover,
 
 .style__wrapper___cQFyX .rdtPicker th
 .rdtSwitch:hover {
-    background: #00ADEE !important;
+    background: var(--colors-PrimaryBlue) !important;
 }
 
 .style__wrapper___cQFyX .rdtPicker th
 .dow {
     width: 40px;
-    background: #323232;
+    background: var(--colors-ContrastNeutral);
     text-align: center;
 }
 
-.style__wrapper___cQFyX td.rdtDay {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid #323232;
-}
-
-.style__wrapper___cQFyX td.rdtMonth {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid #323232;
-}
-
+.style__wrapper___cQFyX td.rdtDay,
+.style__wrapper___cQFyX td.rdtMonth,
 .style__wrapper___cQFyX td.rdtTimeToggle {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    border: 1px solid #323232;
+    border: 1px solid var(--colors-ContrastNeutral);
 }
 
-.style__wrapper___cQFyX td.rdtDay:hover {
-    background: #00ADEE !important;
-}
-
-.style__wrapper___cQFyX td.rdtMonth:hover {
-    background: #00ADEE !important;
-}
-
+.style__wrapper___cQFyX td.rdtDay:hover,
+.style__wrapper___cQFyX td.rdtMonth:hover,
 .style__wrapper___cQFyX td.rdtTimeToggle:hover {
-    background: #00ADEE !important;
+    background: var(--colors-PrimaryBlue) !important;
 }
 
 .style__wrapper___cQFyX td.rdtDay.rdtOld,
@@ -535,12 +477,12 @@
 }
 
 .style__wrapper___cQFyX td.rdtToday:before {
-    border-bottom-color: #00ADEE !important;
+    border-bottom-color: var(--colors-PrimaryBlue) !important;
 }
 
 .style__wrapper___cQFyX td.rdtActive {
-    background: #00ADEE !important;
-    color: #FFF;
+    background: var(--colors-PrimaryBlue) !important;
+    color: var(--colors-ContrastBrightest);
 
 }
 
@@ -557,5 +499,3 @@
     cursor: not-allowed;
 }
 
-
-/*# sourceMappingURL=Plugin.css.map*/
